@@ -21,6 +21,8 @@ RUN bun run build
 # Production stage
 FROM oven/bun:1-slim
 
+LABEL type=scale
+
 WORKDIR /app
 
 # Copy built application
