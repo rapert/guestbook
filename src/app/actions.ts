@@ -17,3 +17,8 @@ export async function getServerResources() {
     freeMemBytes,
   };
 }
+
+export async function getScaleEnv() {
+  const value = process.env.SCALE_ENV;
+  return value ?? null;
+}
